@@ -1,0 +1,74 @@
+page{
+  background: #000;
+}
+.video{
+  height: 800rpx;
+  position: relative;
+}
+camera{
+  width: 750rpx;
+  height: 800rpx;
+  border: 1rpx solid #000;
+  margin: 0 auto;
+}
+.time{
+  width: 750rpx;
+  height: 50rpx;
+  background: rgba(0,0,0,.3);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  text-align: center;
+}
+.controls{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20rpx 0;
+}
+.flashlight{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #fff;
+   /* 利用弹性布局实现水平垂直居中 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flashlight image{
+  width: 60%;
+  height: 60%;
+}
+.button{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  /* margin: 30rpx auto; */
+  text-align: center;
+  line-height: 200rpx;
+  cursor: pointer;
+  color: #fff;
+}
+.position{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  text-align: center;
+  /* 利用弹性布局实现水平垂直居中 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* border: 1rpx solid #fff; */
+  box-shadow: 0 0 5px #fff;
+}
+.position image{
+  width: 60%;
+  height: 60%;
+  transition: all 1s;
+}
+.active image{
+  transform: rotateY(180deg);
+}

@@ -1,0 +1,11 @@
+<view class="img">
+    <image src="{{userInfo[0].image}}"></image>
+</view>
+<view class="user">
+  <image src="{{userInfo[0].avatarUrl}}" />
+  <view class="msg">
+    <text>{{userInfo[0].username}}</text>
+    <text>9月15日 10:33</text>
+  </view>
+</view>
+<view class="dsc">{{userInfo[0].dsc}}</view>

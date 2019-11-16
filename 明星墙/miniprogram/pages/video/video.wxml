@@ -1,0 +1,11 @@
+<view class="video">
+  <camera frame-size="large" device-position="{{position}}" flash="off">
+    <cover-view class="time">{{hours}}：{{minutes}}：{{seconds}}</cover-view>
+  </camera>
+</view>
+<view class="controls">
+  <view class="flashlight"><image src="/images/close.png"></image></view>
+  <view class="button" bindtap="start" style="background:{{bg_color}}">{{action}}</view>
+  <view class="{{flag==true?'position active':'position'}}" bindtap="change"><image src="/images/change.png"></image></view>
+</view>
+<button type="primary" bindtap="upload" disabled="{{}}">上传</button>

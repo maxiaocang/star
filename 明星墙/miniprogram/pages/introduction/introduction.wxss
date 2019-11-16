@@ -1,0 +1,26 @@
+form{
+  width: 600rpx;
+  padding: 10rpx;
+  margin: 0 auto;
+  background: #fff;
+  display: block;
+}
+
+form view{
+  display: flex;
+  margin-top: 30rpx;
+}
+form view input{
+  border: 1rpx solid #000;
+}
+form view image{
+  width: 100rpx;
+  height: 100rpx;
+  background: rgba(0,0,0,.1);
+}
+form view.dsc{
+  flex-direction: column;
+}
+form view.dsc .content{
+  border: 1rpx solid #000;
+}

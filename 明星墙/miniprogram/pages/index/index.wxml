@@ -1,0 +1,9 @@
+<block wx:for="{{users}}" wx:key="{{item._id}}">
+  <view class="user_list" bindtap="toDetail" id="{{item._id}}">
+    <view class="pic">
+      <image src="{{item.image}}"></image>
+    </view>
+    <view class="dsc">{{item.dsc}}</view>
+    <view class="user"><image src="{{item.avatarUrl}}" /><text>{{item.username}}</text></view>
+  </view>
+</block>

@@ -1,0 +1,8 @@
+<view class="{{flag?'show':'none'}}">
+  <text>您还没有上传视频！</text>
+</view>
+<view class="{{!flag?'video_list':'video_list video_none'}}">
+  <block wx:for="{{videoUrl}}" wx:key="{{item._id}}">
+    <video src="{{item.videoUrl}}" controls="{{true}}"></video>
+  </block>
+</view>

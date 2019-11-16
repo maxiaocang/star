@@ -1,0 +1,17 @@
+<view class="avatar" bindtap="login">
+  <image src="{{userInfo.avatarUrl}}"></image>
+</view>
+<view class="username">{{userInfo.nickName}}</view>
+<!-- <view>
+  <button open-type="getUserInfo" bindgetuserinfo="getuserinfo" type="primary">点击获取用户信息</button>
+</view> -->
+<view class="main">
+  <view class="list" bindtap="toIntroduction">
+    <image src="/images/add.png"></image>
+    <text>个人简介</text>
+  </view>
+  <view class="list" bindtap="toAdd">
+    <image src="/images/video.png"></image>
+    <text>添加视频</text>
+  </view>
+</view>

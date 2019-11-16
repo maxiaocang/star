@@ -1,0 +1,21 @@
+page{
+  background: #DBDBDB;
+}
+.show{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.none{
+  display: none;
+}
+.video_list{
+  text-align: center
+}
+.video_none{
+  display: none;
+}
+video{
+  max-height: 340rpx;
+}
